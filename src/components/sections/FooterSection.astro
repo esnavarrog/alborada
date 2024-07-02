@@ -12,9 +12,9 @@ import { SITE } from "@data/constants";
 const strings = Astro.currentLocale === "fr" ? frStrings : enStrings;
 
 // Define the variables that will be used in this component
-const sectionThreeTitle: string = Astro.currentLocale === "fr" ? "Rester à jour" : "Stay up to date";
+const sectionThreeTitle: string = Astro.currentLocale === "fr" ? "Rester à jour" : "Mantente al día";
 const sectionThreeContent: string = Astro.currentLocale === "fr" ? "Restez informé des derniers outils et des offres exclusives." :
-  "Stay updated with the latest tools and exclusive deals.";
+  "Mantente actualizado sobre nuevos servicios y precios.";
 const crafted: string = Astro.currentLocale === "fr" ? "Fabriqué par" : "Crafted by";
 ---
 
@@ -74,13 +74,13 @@ const crafted: string = Astro.currentLocale === "fr" ? "Fabriqué par" : "Crafte
     >
       <div class="flex items-center justify-between">
         <p class="text-sm text-neutral-600 dark:text-neutral-400">
-          © <span id="current-year"></span> {SITE.title}. {crafted}
-          <a
+          © <span id="current-year"></span> {SITE.title}.
+          <!-- <a
             class="rounded-lg font-medium underline underline-offset-2 outline-none ring-zinc-500 transition duration-300 hover:text-neutral-700 hover:decoration-dashed focus:outline-none focus-visible:ring dark:ring-zinc-200 dark:hover:text-neutral-300"
             href="https://sobstvennoai.dev"
             target="_blank"
             rel="noopener noreferrer">sobstvennoAI</a
-          >.
+          >. -->
         </p>
       </div>
 
@@ -88,22 +88,6 @@ const crafted: string = Astro.currentLocale === "fr" ? "Fabriqué par" : "Crafte
       <div>
         <FooterSocialLink url={strings.socialLinks.facebook}
           ><Icon name="facebookFooter" />
-        </FooterSocialLink>
-
-        <FooterSocialLink url={strings.socialLinks.x}
-          ><Icon name="xFooter" /></FooterSocialLink
-        >
-
-        <FooterSocialLink url={strings.socialLinks.github}
-          ><Icon name="githubFooter" />
-        </FooterSocialLink>
-
-        <FooterSocialLink url={strings.socialLinks.google}
-          ><Icon name="googleFooter" />
-        </FooterSocialLink>
-
-        <FooterSocialLink url={strings.socialLinks.slack}
-          ><Icon name="slackFooter" />
         </FooterSocialLink>
       </div>
     </div>

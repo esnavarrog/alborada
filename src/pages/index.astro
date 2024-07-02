@@ -10,14 +10,14 @@ import TestimonialsSection from "@components/sections/testimonials/TestimonialsS
 import PricingSection from "@components/sections/pricing/PricingSection.astro";
 import FAQ from "@components/sections/FAQ.astro";
 import AnnouncementBanner from "@components/ui/banners/AnnouncementBanner.astro";
-import heroImage from "@images/hero-image.avif";
+import heroImage from "@images/alborada/BARRERA-TIPO-F-SIMETRICA-600x600-removebg-preview.png";
 import faqs from "@data/faqs.json";
 import features from "@data/features.json";
 import pricing from "@data/pricing.json";
-import featureImage from "@images/features-image.avif";
-import construction from "@images/construction-image.avif";
-import tools from "@images/automated-tools.avif";
-import dashboard from "@images/dashboard-image.avif";
+import featureImage from "@images/alborada/canaletas-3.JPG";
+import construction from "@images/alborada/IMG_2178.JPG";
+import tools from "@images/alborada/camara.png";
+import dashboard from "@images/alborada/camion-pluma.jpg";
 
 const avatarSrcs: Array<string> = [
   "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80",
@@ -65,30 +65,30 @@ const avatarSrcs: Array<string> = [
   />
 
   <FeaturesNavs
-    title=`Customize <span class="text-yellow-500 dark:text-yellow-400">ScrewFast</span>'s offerings to perfectly suit your hardware and construction needs.`
+    title=`Servicios adicionales de <span class="text-yellow-500 dark:text-yellow-400">Alborada del Valle</span>.`
     tabs={[
       {
-        heading: "Cutting-Edge Tools",
+        heading: "Extructuras robustas",
         content:
-          "Empower your projects with ScrewFast's cutting-edge tools. Experience enhanced efficiency in construction management with our sophisticated automated solutions.",
+          "Con nuestras estructuras robustas, construye con confianza y seguridad. Diseñadas para resistir el paso del tiempo y las condiciones más adversas, nuestras soluciones garantizan una base sólida y duradera para cualquier tipo de proyecto, desde pequeñas obras hasta grandes desarrollos.",
         svg: "tools",
         src: tools,
         alt: "Yellow and black heavy equipment on brown grass field",
         first: true,
       },
       {
-        heading: "Intuitive Dashboards",
+        heading: "Transporte especializado",
         content:
-          "Navigate with ease using ScrewFast's intuitive dashboards. Set up and oversee your projects seamlessly, with user-friendly interfaces designed for quick and effective workflow management.",
+          "Nuestro transporte especializado está diseñado para manejar cualquier tipo de carga, garantizando la entrega segura y eficiente de tus materiales de construcción. Con nosotros, tus productos siempre estarán en buenas manos, listos para ser utilizados en tu proyecto.",
         svg: "dashboard",
         src: dashboard,
         alt: "A screenshot or graphic representation of the intuitive dashboard",
         second: true,
       },
       {
-        heading: "Robust Features",
+        heading: "Construcciones a la medida",
         content:
-          "Minimize complexity, maximize productivity. ScrewFast's robust features are engineered to streamline your construction process, delivering results that stand out for their excellence.",
+          "Diseñamos y construimos proyectos a la medida para satisfacer tus requerimientos exactos. Nuestra experiencia y atención al detalle nos permiten ofrecer soluciones innovadoras y eficientes, asegurando que cada obra sea un reflejo fiel de tus ideas y necesidades.",
         svg: "house",
         src: construction,
         alt: "Gray metal building frame near tower crane during daytime",
@@ -96,7 +96,7 @@ const avatarSrcs: Array<string> = [
     ]}
   />
 
-  <TestimonialsSection
+  <!-- <TestimonialsSection
     title="Fast-Track Your Projects"
     subTitle="At ScrewFast, we ensure a swift start with instant account setup. Experience the speed of construction redefined."
     ;
@@ -131,15 +131,15 @@ const avatarSrcs: Array<string> = [
         description: "quicker assembly using innovative fastening solutions",
       },
     ]}
-  />
+  /> -->
 
-  <PricingSection pricing={pricing} />
+  <!-- <PricingSection pricing={pricing} /> -->
 
-  <FAQ title="Frequently<br />asked questions" faqs={faqs} />
+  <FAQ title="Preguntas<br />Frecuentes" faqs={faqs} />
 
-  <HeroSectionAlt
+  <!-- <HeroSectionAlt
     title="Let's Build Together"
     subTitle="ScrewFast is an open-source template, meticulously crafted with Astro, Tailwind CSS, and Preline UI frameworks."
     url="https://github.com/mearashadowfax/ScrewFast"
-  />
+  /> -->
 </MainLayout>
