@@ -23,7 +23,7 @@ const {
 
 // Define TypeScript interface for props
 interface Props {
-  title: string;
+  title?: string;
   subTitle?: string;
   primaryBtn?: string;
   primaryBtnURL?: string;
@@ -90,16 +90,18 @@ interface Props {
 <script>
   document.addEventListener('DOMContentLoaded', () => {
     const slider = document.querySelector('#slider');
-    setTimeout(function moveSlide() {
-        const max = slider.scrollWidth - slider.clientWidth;
-        const left = slider.clientWidth;
-
-        if (max <= slider.scrollLeft + left) {
-            slider.scrollTo({ left: 0, behavior: 'smooth' });
-        } else {
-            slider.scrollBy({ left, behavior: 'smooth' });
-        }
-        setTimeout(moveSlide, 3000);
-    }, 3000);
-});
+    if (slider !== null) {
+      setTimeout(function moveSlide() {
+          const max = slider.scrollWidth - slider.clientWidth;
+          const left = slider.clientWidth;
+  
+          if (max <= slider.scrollLeft + left) {
+              slider.scrollTo({ left: 0, behavior: 'smooth' });
+          } else {
+              slider.scrollBy({ left, behavior: 'smooth' });
+          }
+          setTimeout(moveSlide, 3000);
+      }, 3000);
+    }
+  });
 </script>

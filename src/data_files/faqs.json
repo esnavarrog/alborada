@@ -3,7 +3,8 @@
   "faqs": [
     {
       "question": "¿Ofrecen asesoría personalizada para proyectos específicos?",
-      "answer": "Si, contamos con el área de Asesoría técnica."
+      "answer": "Si, contamos con el área de Asesoría técnica.",
+      "table": false
     },
     {
       "question": "¿Que tamaños de barreras de concreto ofreces?",
@@ -12,7 +13,8 @@
     },
     {
       "question": "¿Como garantizan la calidad de sus producto?",
-      "answer": "Implementamos un sistema de control de calidad que abarca todo el proceso constructivo y de logística."
+      "answer": "Implementamos un sistema de control de calidad que abarca todo el proceso constructivo y de logística.",
+      "table": false
     }
   ]
 }
