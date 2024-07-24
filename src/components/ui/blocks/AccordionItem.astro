@@ -1,13 +1,14 @@
 ---
 import Icon from "@components/ui/icons/Icon.astro";
 // Define props from Astro
-const { id, collapseId, question, answer, first } = Astro.props;
+const { id, collapseId, question, answer, table, first } = Astro.props;
 // Define TypeScript interface for props
 interface Props {
   id: string;
   collapseId: string;
   question: string;
   answer: string;
+  table: boolean;
   first?: boolean;
 }
 // Define class names for the accordion and its content
@@ -42,8 +43,88 @@ function getAccordionClass(first: boolean = false) {
     id={collapseId}
   >
     <!-- The content paragraph -->
-    <p class="text-pretty text-neutral-600 dark:text-neutral-400">
-      {answer}
-    </p>
+    {
+      table ?
+        (
+        <div class="mt-6 space-y-6 md:ml-auto md:mt-0">
+          <div class="flex flex-col">
+            <div class="-m-1.5 overflow-x-auto">
+              <div class="inline-block min-w-full p-1.5 align-middle">
+                <div class="overflow-hidden">
+                  <table class="min-w-full divide-y divide-neutral-300 dark:divide-neutral-700">
+                    <thead>
+                      <tr>
+                        <th
+                          scope="col"
+                          class="px-6 py-3 text-start text-xs font-medium uppercase text-neutral-500 dark:text-neutral-500"
+                        >
+                          NOMBRE PRODUCTO
+                        </th>
+                        <th
+                          scope="col"
+                          class="px-6 py-3 text-start text-xs font-medium uppercase text-neutral-500 dark:text-neutral-500"
+                        >
+                          ALTURA
+                        </th>
+                        <th
+                          scope="col"
+                          class="px-6 py-3 text-start text-xs font-medium uppercase text-neutral-500 dark:text-neutral-500"
+                        >
+                          LARGO
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody class="divide-y divide-neutral-300 dark:divide-neutral-700">
+                      <tr>
+                        <td class="whitespace-nowrap px-6 py-4 text-sm font-medium text-neutral-600 dark:text-neutral-400">
+                          BARRERA NEW JERSEY DOBLE TIPO F
+                        </td>
+                        <td>
+                          81 CM
+                        </td>
+                        <td>
+                          2,0 - 2,5 - 3,0 MTS
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td class="whitespace-nowrap px-6 py-4 text-sm font-medium text-neutral-600 dark:text-neutral-400">
+                          BARRERA NEW JERSEY DOBLE TIPO F
+                        </td>
+                        <td>
+                          1,07 MTS
+                        </td>
+                        <td>
+                          3,0 MTS
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td class="whitespace-nowrap px-6 py-4 text-sm font-medium text-neutral-600 dark:text-neutral-400">
+                          BARRERA NEW JERSEY DOBLE TIPO F
+                        </td>
+                        <td>
+                          1,4  MTS
+                        </td>
+                        <td>
+                          3,0 MTS
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        )
+      :
+        (
+          <div class="text-pretty text-neutral-600 dark:text-neutral-400">
+            {answer}
+          </div>
+        )
+    }
+    
   </div>
 </div>
