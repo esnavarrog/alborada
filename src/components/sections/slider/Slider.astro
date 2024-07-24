@@ -1,0 +1,105 @@
+---
+import image2 from '@images/alborada/patio.jpg';
+import image3 from '@images/alborada/canaletas.jpg';
+import image4 from "@images/alborada/canaletas-3.jpg";
+import image1 from "@images/alborada/canaleta.jpg";
+
+import { Image } from "astro:assets";
+const {
+  title,
+  subTitle,
+  primaryBtn,
+  primaryBtnURL,
+  secondaryBtn,
+  secondaryBtnURL,
+  withReview,
+  avatars,
+  starCount,
+  rating,
+  reviews,
+  src,
+  alt
+} = Astro.props;
+
+// Define TypeScript interface for props
+interface Props {
+  title: string;
+  subTitle?: string;
+  primaryBtn?: string;
+  primaryBtnURL?: string;
+  secondaryBtn?: string;
+  secondaryBtnURL?: string;
+  withReview?: boolean;
+  avatars?: Array<string>;
+  starCount?: number;
+  rating?: string;
+  reviews?: string;
+  src?: any;
+  alt?: string;
+}
+
+---
+
+<div class="h-screen w-full overflow-hidden flex flex-nowrap text-center max-h-[500px] rounded-lg" id="slider">
+  <div class="bg-blue-600 text-white space-y-4 flex-none w-full flex flex-col items-center justify-center">
+    <Image
+      src={image1}
+      alt="image1"
+      class="w-full object-cover object-center rounded-md"
+      draggable={"false"}
+      loading={"eager"}
+      format={"jpg"}
+    />
+    
+  </div>
+  <div class="bg-pink-400 text-white space-y-4 flex-none w-full flex flex-col items-center justify-center">
+    <Image
+      src={image2}
+      alt="image1"
+      class="w-full object-cover object-center rounded-md"
+      draggable={"false"}
+      loading={"eager"}
+      format={"jpg"}
+    />
+    
+  </div>
+  <div class="bg-teal-500 text-white space-y-4 flex-none w-full flex flex-col items-center justify-center">
+    <Image
+      src={image3}
+      alt="image1"
+      class="w-full object-cover object-center rounded-md"
+      draggable={"false"}
+      loading={"eager"}
+      format={"jpg"}
+    />
+
+  </div>
+  <div class="bg-teal-500 text-white space-y-4 flex-none w-full flex flex-col items-center justify-center">
+    <Image
+      src={image4}
+      alt="image1"
+      class="w-full object-cover object-center rounded-md"
+      draggable={"false"}
+      loading={"eager"}
+      format={"jpg"}
+    />
+
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const slider = document.querySelector('#slider');
+    setTimeout(function moveSlide() {
+        const max = slider.scrollWidth - slider.clientWidth;
+        const left = slider.clientWidth;
+
+        if (max <= slider.scrollLeft + left) {
+            slider.scrollTo({ left: 0, behavior: 'smooth' });
+        } else {
+            slider.scrollBy({ left, behavior: 'smooth' });
+        }
+        setTimeout(moveSlide, 3000);
+    }, 3000);
+});
+</script>

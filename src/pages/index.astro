@@ -6,7 +6,8 @@ import ClientsSection from "@components/sections/landing/ClientsSection.astro";
 import FeaturesGeneral from "@components/sections/features/FeaturesGeneral.astro";
 import FeaturesNavs from "@components/sections/features/FeaturesNavs.astro";
 import FAQ from "@components/sections/FAQ.astro";
-import heroImage from "@images/alborada/BARRERA-TIPO-F-SIMETRICA-600x600-removebg-preview.png";
+import Slider from "@components/sections/slider/Slider.astro";
+import heroImage from "@images/alborada/camion.jpg";
 import faqs from "@data/faqs.json";
 import features from "@data/features.json";
 import featureImage from "@images/alborada/canaletas-3.jpg";
@@ -23,16 +24,10 @@ const avatarSrcs: Array<string> = [
 ---
 
 <MainLayout>
-  <!-- <AnnouncementBanner
-    btnId="dismiss-button"
-    btnTitle="Explore ScrewFast on GitHub"
-    url="https://github.com/mearashadowfax/ScrewFast"
-  /> -->
 
   <HeroSection
     title=`Profesionales en construcción <span
         class="text-yellow-500 dark:text-yellow-400">Alborada del Valle</span>`
-    subTitle="Top-quality hardware tools and expert construction services for every project need."
     primaryBtn="Nuestro Productos"
     primaryBtnURL="/products"
     secondaryBtn="Contáctanos"
@@ -51,11 +46,11 @@ const avatarSrcs: Array<string> = [
     subTitle="Calidad en nuestros productos."
   />
 
+  <Slider />
+
   <FeaturesGeneral
     title="ALBORADA DEL VALLE SPA"
     subTitle="Somos una empresa comercializadora mayorista de productos prefabricados en hormigón. Con mas de 5 años de experiencia en el mercado. Nuestra misión es proporcionar a nuestros clientes soluciones de construcción innovadoras y de alta calidad, que satisfagan sus necesidades y superes sus expectativas."
-    src={featureImage}
-    alt="Nuestras barreras de concreto están diseñadas para ofrecer máxima durabilidad y resistencia"
     features={features}
   />
 
@@ -91,6 +86,6 @@ const avatarSrcs: Array<string> = [
     ]}
   />
 
-  <FAQ title="Preguntas<br />Frecuentes" faqs={faqs} />
+  <FAQ title="Preguntas Frecuentes" faqs={faqs} />
 
 </MainLayout>
