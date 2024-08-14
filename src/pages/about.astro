@@ -1,0 +1,37 @@
+---
+import FeaturesGeneral from "@components/sections/features/FeaturesGeneral.astro";
+import MainLayout from "@/layouts/MainLayout.astro";
+import features from "@data/about.json";
+
+import { SITE } from "@data/constants";
+
+const pageTitle: string = `Sobre Nosotros | ${SITE.title}`;
+---
+
+
+<MainLayout
+  title={pageTitle}
+  structuredData={{
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://screwfast.uk/contact",
+    "url": "https://screwfast.uk/contact",
+    "name": "Contact Us | ScrewFast",
+    "description":
+      "Have questions or want to discuss a project? Reach out, and let's craft the perfect solution with our tools and services.",
+    "isPartOf": {
+      "@type": "WebSite",
+      "url": "https://alboradadelvalle.cl",
+      "name": "ScrewFast",
+      "description":
+        "ScrewFast offers top-tier hardware tools and expert construction services to meet all your project needs.",
+    },
+    "inLanguage": "en-US"
+  }}
+>
+  <FeaturesGeneral
+    title="ALBORADA DEL VALLE SPA"
+    subTitle="Somos una empresa comercializadora mayorista de productos prefabricados en hormigón. Con mas de 5 años de experiencia en el mercado. Nuestra misión es proporcionar a nuestros clientes soluciones de construcción innovadoras y de alta calidad, que satisfagan sus necesidades y superes sus expectativas."
+    features={features}
+  />
+</MainLayout>

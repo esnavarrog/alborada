@@ -3,6 +3,7 @@ import image2 from '@images/alborada/patio.jpg';
 import image3 from '@images/alborada/canaletas.jpg';
 import image4 from "@images/alborada/canaletas-3.jpg";
 import image1 from "@images/alborada/canaleta.jpg";
+import HeroSection from "@components/sections/landing/HeroSection.astro";
 
 import { Image } from "astro:assets";
 const {
@@ -40,52 +41,91 @@ interface Props {
 
 ---
 
-<div class="h-screen w-full overflow-hidden flex flex-nowrap text-center max-h-[500px] rounded-lg" id="slider">
-  <div class="bg-blue-600 text-white space-y-4 flex-none w-full flex flex-col items-center justify-center">
-    <Image
-      src={image1}
-      alt="image1"
-      class="w-full object-cover object-center rounded-md"
-      draggable={"false"}
-      loading={"eager"}
-      format={"jpg"}
-    />
-    
-  </div>
-  <div class="bg-pink-400 text-white space-y-4 flex-none w-full flex flex-col items-center justify-center">
-    <Image
-      src={image2}
-      alt="image1"
-      class="w-full object-cover object-center rounded-md"
-      draggable={"false"}
-      loading={"eager"}
-      format={"jpg"}
-    />
-    
-  </div>
-  <div class="bg-teal-500 text-white space-y-4 flex-none w-full flex flex-col items-center justify-center">
-    <Image
-      src={image3}
-      alt="image1"
-      class="w-full object-cover object-center rounded-md"
-      draggable={"false"}
-      loading={"eager"}
-      format={"jpg"}
-    />
+<div class="relative">
 
-  </div>
-  <div class="bg-teal-500 text-white space-y-4 flex-none w-full flex flex-col items-center justify-center">
-    <Image
-      src={image4}
-      alt="image1"
-      class="w-full object-cover object-center rounded-md"
-      draggable={"false"}
-      loading={"eager"}
-      format={"jpg"}
-    />
 
+  <div class="min-h-screen w-full overflow-hidden flex flex-nowrap text-center" id="slider" data-aos="fade-in">
+    <div class="bg-blue-600 text-white flex-none w-full flex flex-col items-center justify-center">
+      <Image
+        src={image1}
+        alt="image1"
+        class="w-full min-h-screen max-h-screen object-cover object-top sepia"
+        draggable={"false"}
+        loading={"eager"}
+        format={"jpg"}
+      />
+      <HeroSection
+        title=`Bienvenidos a <span
+            class="text-yellow-500 dark:text-yellow-400">Alborada del Valle</span>`
+        primaryBtn="Nuestro Productos"
+        primaryBtnURL="/products"
+        secondaryBtn="Contáctanos"
+        secondaryBtnURL="/contact"
+        withReview={false}
+        rating=`<span class="font-bold">4.8</span> / 5`
+        starCount={4}
+        reviews=`From Over <span class="font-bold">12.8k</span> Reviews`
+        alt="Stack of ScrewFast product boxes containing assorted hardware tools"
+      />
+    </div>
+    <div class="bg-pink-400 text-white space-y-4 flex-none w-full flex flex-col items-center justify-center">
+      <Image
+        src={image2}
+        alt="image1"
+        class="w-full min-h-screen max-h-screen max-h-screen object-cover object-top sepia"
+        draggable={"false"}
+        loading={"eager"}
+        format={"jpg"}
+      />
+      <HeroSection
+        title=`<span
+            class="text-yellow-500 dark:text-yellow-400">Aprovecha nuestros servicios de transporte</span>`
+        primaryBtn="Nuestro Servicios"
+        primaryBtnURL="/services"
+        secondaryBtn="Contáctanos"
+        secondaryBtnURL="/contact"
+        withReview={false}
+        rating=`<span class="font-bold">4.8</span> / 5`
+        starCount={4}
+        reviews=`From Over <span class="font-bold">12.8k</span> Reviews`
+        alt="Stack of ScrewFast product boxes containing assorted hardware tools"
+      />
+    </div>
+    <div class="bg-teal-500 text-white space-y-4 flex-none w-full flex flex-col items-center justify-center">
+      <Image
+        src={image3}
+        alt="image1"
+        class="w-full min-h-screen max-h-screen object-cover object-top sepia"
+        draggable={"false"}
+        loading={"eager"}
+        format={"jpg"}
+      />
+  
+    </div>
+    <div class="bg-teal-500 text-white space-y-4 flex-none w-full flex flex-col items-center justify-center">
+      <Image
+        src={image4}
+        alt="image1"
+        class="w-full min-h-screen max-h-screen object-cover object-top sepia"
+        draggable={"false"}
+        loading={"eager"}
+        format={"jpg"}
+      />
+  
+    </div>
   </div>
 </div>
+
+<style>
+  #slider{
+    margin-top: -44px;
+  }
+  @media (min-width: 768px) {
+    #slider{
+      margin-top: -89px;
+    }
+  }
+</style>
 
 <script>
   document.addEventListener('DOMContentLoaded', () => {
@@ -100,8 +140,8 @@ interface Props {
           } else {
               slider.scrollBy({ left, behavior: 'smooth' });
           }
-          setTimeout(moveSlide, 3000);
-      }, 3000);
+          setTimeout(moveSlide, 5000);
+      }, 5000);
     }
   });
 </script>

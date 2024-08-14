@@ -4,6 +4,7 @@ import { Image } from "astro:assets";
 import PrimaryCTA from "@components/ui/buttons/PrimaryCTA.astro";
 import SecondaryCTA from "@components/ui/buttons/SecondaryCTA.astro";
 import ReviewComponent from "@components/ui/blocks/ReviewComponent.astro";
+import { sequence } from "astro:middleware";
 
 // Define props from Astro
 const {
@@ -42,13 +43,14 @@ interface Props {
 
 <!-- Defining a grid container that holds all the content -->
 <section
-  class="mx-auto grid max-w-[85rem] gap-4 px-4 py-14 sm:px-6 md:grid-cols-2 md:items-center md:gap-8 lg:px-8 2xl:max-w-full"
+  class="absolute bottom-1/2 w-full z-10 mx-auto gap-4 px-4 py-14 sm:px-6 backdrop-blur-sm bg-black/30 md:items-center md:gap-8 lg:px-8 "
+  data-aos="fade-in"
 >
   <!-- Title and description -->
-  <div>
+  <div class="text-center">
     <!-- Each h1 and p tag renders a portion of the title and subTitle defined above -->
     <h1
-      class="block text-balance text-3xl font-bold tracking-tight text-neutral-800 dark:text-neutral-200 sm:text-4xl lg:text-6xl lg:leading-tight"
+      class="block text-balance text-3xl font-bold tracking-tight text-neutral-200 dark:text-neutral-200 sm:text-4xl lg:text-6xl lg:leading-tight"
     >
       <!-- About Fragment: https://docs.astro.build/en/basics/astro-syntax/#fragments -->
       <Fragment set:html={title} />
@@ -61,7 +63,7 @@ interface Props {
     </p>
   }
     <!-- Action Button Section: This section includes two CTAs with their own styles and URL -->
-    <div class="mt-7 grid w-full gap-3 sm:inline-flex">
+    <div class="mt-7 w-full text-center grid gap-3 sm:inline-flex">
       {primaryBtn && 
       <PrimaryCTA title={primaryBtn} url={primaryBtnURL} />
       }
@@ -83,7 +85,7 @@ interface Props {
 	<Image
         src={src}
         alt={alt}
-        class="h-full w-full scale-110 object-cover object-center rounded-md"
+        class="h-full w-full scale-110 object-cover object-center rounded-md "
         draggable={"false"}
         loading={"eager"}
         format={"jpg"}

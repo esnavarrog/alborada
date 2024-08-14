@@ -1,9 +1,14 @@
 // An array of links for navigation bar
 const navBarLinks = [
   { name: "Inicio", url: "/" },
-  { name: "Productos", url: "/products" },
+  { name: "Prefabricados", url: "/products" },
+  { name: "Ferretería", url: "/products" },
+  { name: "Servicios", url: "/products" },
+  { name: "Nosotros", url: "/about" },
   { name: "Contáctanos", url: "/contact" },
 ];
+
+const phoneNumber = '56955248982';
 // An array of links for footer
 const footerLinks = [
   {
@@ -16,7 +21,7 @@ const footerLinks = [
   {
     section: "Empresa",
     links: [
-      { name: "Sobre Nosotros", url: "#" },
+      { name: "Sobre Nosotros", url: "/about" },
       { name: "Terminos y Condiciones", url: "#" },
       { name: "Políticas de Privacidad", url: "#" },
     ],
@@ -29,6 +34,7 @@ const socialLinks = {
 
 export default {
   navBarLinks,
+  phoneNumber,
   footerLinks,
   socialLinks,
 };
