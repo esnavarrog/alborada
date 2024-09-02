@@ -1,11 +1,11 @@
 ---
-title: "BARRERA DE HORMIGON TIPO F"
-description: "Barrera de hormigón también conocida como 'New Jersey'"
+title: "BARRERA DE HORMIGON 0,81 X 3 MTS"
+description: "Barrera de hormigón 3mts"
 category: "prefabricados"
 main:
   id: 2
   content: |
-    Barrera de hormigón prefabricada también conocida como 'New Jersey', 'Camineras' o 'Tipo F'. Es una estructura de contención utilizadas para proteger zonas vulnerables contra impactos de vehículos o otros objetos. Estas barreras están diseñadas para absorber o distribuir la energía del impacto, reduciendo el riesgo de daño o lesiones.
+    Barrera de hormigón armado Tipo F Mop estándar de 0,81 x 3,0 mts con conector galvanizado, Cumple con la normativa de seguridad vial, resistente y duradera. Utilizada principalmente en carreras y autopistas. Como también en usos secundarios de delimitar áreas, zonas de trabajos. Recomendables para zonas de tráfico entre 70km a 120km (hr).
   imgCard: "@/images/alborada/barrera-mop-2.jpg"
   imgMain: "@/images/alborada/barrera-mop.jpg"
   imgAlt: "Mockup boxes of assorted screw set"
@@ -49,5 +49,5 @@ tableData:
 blueprints:
   first: "@/images/alborada/barrera-tipo-f1.png"
   second: "@/images/alborada/barrera-tipo-f2.png"
-slug: barrera-tipo-f
+slug: barrera-hormigon-800x3000
 ---

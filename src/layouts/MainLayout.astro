@@ -21,7 +21,7 @@ interface Props {
 This is the main structure for the page.
 We set the language of the page to English and add classes for scrollbar and scroll behavior.
 -->
-<html lang={lang} class="scrollbar-hide lenis lenis-smooth">
+<html lang={lang} class="">
   <head>
     <!-- Adding metadata to the HTML document -->
     <Meta meta={meta} structuredData={structuredData} />
@@ -39,9 +39,6 @@ We set the language of the page to English and add classes for scrollbar and scr
         document.documentElement.classList.remove("dark");
       }
     </script>
-    <script>
-      import "@scripts/lenisSmoothScroll.js";
-    </script>
   </head>
   <body
     class="bg-neutral-200 selection:bg-yellow-400 selection:text-neutral-700 dark:bg-neutral-900"
@@ -50,7 +47,7 @@ We set the language of the page to English and add classes for scrollbar and scr
     Setting up the main structure of the page.
     The Navbar is placed at the top, with a slot for the main content and FooterSection at the bottom.
     -->
-    <div class="mx-auto max-w-screen-2xl pb-4 sm:pb-6 lg:pb-8">
+    <div class="mx-auto pb-4 sm:pb-6 lg:pb-8">
       <Navbar />
       <main>
         <slot />

@@ -1,8 +1,8 @@
 ---
-import image2 from '@images/alborada/patio.jpg';
-import image3 from '@images/alborada/canaletas.jpg';
-import image4 from "@images/alborada/canaletas-3.jpg";
-import image1 from "@images/alborada/canaleta.jpg";
+import image2 from '@images/alborada/frontpage/PREFABRICDOS.png';
+import image3 from '@images/alborada/frontpage/CANALETAS PEQUEÑAS.jpg';
+import image4 from "@images/alborada/frontpage/AMCN6783.jpg";
+import image1 from "@images/alborada/frontpage/IMG_5301.jpg";
 import HeroSection from "@components/sections/landing/HeroSection.astro";
 
 import { Image } from "astro:assets";
@@ -41,33 +41,10 @@ interface Props {
 
 ---
 
-<div class="relative">
+<div class="relative w-full">
 
 
   <div class="min-h-screen w-full overflow-hidden flex flex-nowrap text-center" id="slider" data-aos="fade-in">
-    <div class="bg-blue-600 text-white flex-none w-full flex flex-col items-center justify-center">
-      <Image
-        src={image1}
-        alt="image1"
-        class="w-full min-h-screen max-h-screen object-cover object-top sepia"
-        draggable={"false"}
-        loading={"eager"}
-        format={"jpg"}
-      />
-      <HeroSection
-        title=`Bienvenidos a <span
-            class="text-yellow-500 dark:text-yellow-400">Alborada del Valle</span>`
-        primaryBtn="Nuestro Productos"
-        primaryBtnURL="/products"
-        secondaryBtn="Contáctanos"
-        secondaryBtnURL="/contact"
-        withReview={false}
-        rating=`<span class="font-bold">4.8</span> / 5`
-        starCount={4}
-        reviews=`From Over <span class="font-bold">12.8k</span> Reviews`
-        alt="Stack of ScrewFast product boxes containing assorted hardware tools"
-      />
-    </div>
     <div class="bg-pink-400 text-white space-y-4 flex-none w-full flex flex-col items-center justify-center">
       <Image
         src={image2}
@@ -79,9 +56,34 @@ interface Props {
       />
       <HeroSection
         title=`<span
-            class="text-yellow-500 dark:text-yellow-400">Aprovecha nuestros servicios de transporte</span>`
-        primaryBtn="Nuestro Servicios"
-        primaryBtnURL="/services"
+            class="text-yellow-500 dark:text-yellow-400 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">ALBORADA DEL VALLE</span>`
+        subTitle="Somos una comercializadora de prefabricados de hormigon armados, inmobiliarios y paisajismo. Realizamos él envió e instalación de nuestros productos así asegurando un servicio de excelente calidad."
+        primaryBtn="Nuestros Productos"
+        primaryBtnURL="/products"
+        secondaryBtn="Contáctanos"
+        secondaryBtnURL="/contact"
+        withReview={false}
+        rating=`<span class="font-bold">4.8</span> / 5`
+        starCount={4}
+        reviews=`From Over <span class="font-bold">12.8k</span> Reviews`
+        alt="Stack of ScrewFast product boxes containing assorted hardware tools"
+      />
+    </div>
+    <div class="bg-blue-600 text-white flex-none w-full flex flex-col items-center justify-center">
+      <Image
+        src={image1}
+        alt="image1"
+        class="w-full min-h-screen max-h-screen object-cover object-top sepia"
+        draggable={"false"}
+        loading={"eager"}
+        format={"jpg"}
+      />
+      <HeroSection
+        title=`<span
+            class="text-yellow-500 dark:text-yellow-400 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">PREFABRICADOS DE HORMIGON</span>`
+        subTitle="Contamos con una amplia variedad de productos para Vialidad, Urbanización, Paisajismo y eléctrica Además fabricación de piezas especiales. Cumpliendo con los más alto estándares de calidad."
+        primaryBtn="Nuestro Productos"
+        primaryBtnURL="/products"
         secondaryBtn="Contáctanos"
         secondaryBtnURL="/contact"
         withReview={false}
@@ -100,6 +102,20 @@ interface Props {
         loading={"eager"}
         format={"jpg"}
       />
+      <HeroSection
+        title=`<span
+            class="text-yellow-500 dark:text-yellow-400 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">ENVIAMOS E INSTALAMOS NUESTROS PRODUCTOS.</span>`
+        subTitle="Tenemos una logística en camiones y maquinarias adecuadas para cada circunstancia. Y operarios capacitados para la correcta instalación y envío de nuestros productos. Cumpliendo con los mas altos estándares de Calidad y seguridad."
+        primaryBtn="Nuestro Productos"
+        primaryBtnURL="/products"
+        secondaryBtn="Contáctanos"
+        secondaryBtnURL="/contact"
+        withReview={false}
+        rating=`<span class="font-bold">4.8</span> / 5`
+        starCount={4}
+        reviews=`From Over <span class="font-bold">12.8k</span> Reviews`
+        alt="Stack of ScrewFast product boxes containing assorted hardware tools"
+      />
   
     </div>
     <div class="bg-teal-500 text-white space-y-4 flex-none w-full flex flex-col items-center justify-center">
@@ -110,6 +126,20 @@ interface Props {
         draggable={"false"}
         loading={"eager"}
         format={"jpg"}
+      />
+      <HeroSection
+        title=`<span
+            class="text-yellow-500 dark:text-yellow-400 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">SERVICIOS ADICIONALES</span>`
+        subTitle="Ofrecemos Asesorías técnicas, Visitas a Terreno y Pintura de nuestros productos."
+        primaryBtn="Nuestros Servicios"
+        primaryBtnURL="/services"
+        secondaryBtn="Contáctanos"
+        secondaryBtnURL="/contact"
+        withReview={false}
+        rating=`<span class="font-bold">4.8</span> / 5`
+        starCount={4}
+        reviews=`From Over <span class="font-bold">12.8k</span> Reviews`
+        alt=""
       />
   
     </div>

@@ -1,12 +1,22 @@
 [
   {
-    "heading": "Nuestro equipo",
-    "content": "Está compuesto por profesionales altamente capacitados y apasionados de la construcción. Que trabajan arduamente para asegurarse de que nuestros productos cumplan con los estándares mas altos de calidad y seguridad.",
+    "heading": "Nuestra Dirigencia",
+    "content": "Nuestra Dirigencia está conformada por un Ingeniero\nConstructor Certificado con 10 años de experiencia en el rubro y un Ingeniero\nComercial que son los cabecillas de nuestra estructura formativa.",
+    "svg": "verified"
+  },
+  {
+    "heading": "Nuestro Personal",
+    "content": "Está compuesto por profesionales altamente capacitados y\napasionados de la construccion que anteriormente ofrecieron sus servicios en\nempresas de prefabricados de hormigones obteniendo una experiencia de más de\n6 años a lo largo de su carrera. En nuestra empresa ellos trabajan arduamente\npara asegurarse de que nuestros productos cumplan con los estándares mas altos\nde calidad y seguridad.",
     "svg": "groups"
   },
   {
+    "heading": "Nuestro Misión",
+    "content": "Es proporcionar a nuestros clientes soluciones de construccion\ninnovadoras y de alta calidad. Mantener productos en stock para que sus\nrespuestas a sus necesidades sean más rápidas.",
+    "svg": "frame"
+  },
+  {
     "heading": "Nuestro Objetivo",
-    "content": "Es ser el proveedor preferido en prefabricados de hormigón y materiales de construcción con el fin de ser reconocidos en el país , por nuestro compromiso y calidad.",
-    "svg": "verified"
+    "content": "Es ser el proveedor preferido en prefabricados de\nhormigón y materiales de construccion con el fin de ser reconocidos en el país ,\npor nuestro compromiso rapidez y calidad de nuestros servicios.",
+    "svg": "tools2"
   }
 ]

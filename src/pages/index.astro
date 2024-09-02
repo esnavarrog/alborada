@@ -10,9 +10,9 @@ import Slider from "@components/sections/slider/Slider.astro";
 import heroImage from "@images/alborada/camion.jpg";
 import faqs from "@data/faqs.json";
 import features from "@data/features.json";
-import construction from "@images/alborada/IMG_2178.jpg";
-import tools from "@images/alborada/camara.png";
-import dashboard from "@images/alborada/camion-pluma.jpg";
+import construction from "@images/alborada/frontpage/IMG_3206.jpg";
+import tools from "@images/alborada/frontpage/camion-en-obra.jpeg";
+import dashboard from "@images/alborada/frontpage/IMG_2463.jpg";
 import Products from "@/pages/products/Products.astro"
 
 ---
@@ -24,19 +24,35 @@ import Products from "@/pages/products/Products.astro"
   <Products />
 
   <FeaturesNavs
-    title=`Servicios adicionales de <span class="text-yellow-500 dark:text-yellow-400">Alborada del Valle</span>.`
+    title=`Servicios Adicionales de <span class="text-yellow-500 dark:text-yellow-400">Alborada del Valle</span>`
     tabs={[
       {
-        heading: "Extructuras robustas",
-        content:
-          "Con nuestras estructuras robustas, construye con confianza y seguridad. Diseñadas para resistir el paso del tiempo y las condiciones más adversas, nuestras soluciones garantizan una base sólida y duradera para cualquier tipo de proyecto, desde pequeñas obras hasta grandes desarrollos.",
+        heading: "DESPACHOS A OBRA",
+        content: `
+          <div>Condiciones de despachos.</div>
+          <ul>
+            <li>
+              <strong>Monto del despacho:</strong> Despacho a obras tiene un costo asociado según la distancia a recorrer.
+            </li>
+            <li>
+              <strong>Lugar de entrega:</strong> Se deberá informar en el proceso de cotización.
+            </li>
+            <li>
+              <strong>Horario de entregas:</strong> Desde las 10:00 AM – 17:00 Hrs.
+            </li>
+            <li>
+              <strong>Pago y facturación:</strong> Se debe cancelar con anterioridad contra factura, antes que el envío se ejecute.
+            </li>
+          </ul>
+          <div>Cliente tendrá un tiempo máximo de descarga de 3 horas. Luego se cobrará una estadía con cargo a la factura.</div>
+        `,
         svg: "tools",
         src: tools,
         alt: "Yellow and black heavy equipment on brown grass field",
         first: true,
       },
       {
-        heading: "Transporte especializado",
+        heading: "DESPACHOS A OBRA",
         content:
           "Nuestro transporte especializado está diseñado para manejar cualquier tipo de carga, garantizando la entrega segura y eficiente de tus materiales de construcción. Con nosotros, tus productos siempre estarán en buenas manos, listos para ser utilizados en tu proyecto.",
         svg: "dashboard",

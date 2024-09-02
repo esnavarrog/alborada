@@ -1,11 +1,11 @@
 ---
-title: "BARRERA DE HORMIGON TIPO F"
-description: "Barrera de hormigón también conocida como 'New Jersey'"
+title: "BARRERA DE HORMIGON 1,07 X 3MTS"
+description: "Barrera de hormigón armado ALTA 1,07 x 3,0 metros."
 category: "prefabricados"
 main:
   id: 2
   content: |
-    Barrera de hormigón prefabricada también conocida como 'New Jersey', 'Camineras' o 'Tipo F'. Es una estructura de contención utilizadas para proteger zonas vulnerables contra impactos de vehículos o otros objetos. Estas barreras están diseñadas para absorber o distribuir la energía del impacto, reduciendo el riesgo de daño o lesiones.
+    Es una barrera de contención estándar utilizada para proyectos de infraestructuras, especialmente en carreteras o autopistas para separar o dirigir el trafico.
   imgCard: "@/images/alborada/barrera-mop-2.jpg"
   imgMain: "@/images/alborada/barrera-mop.jpg"
   imgAlt: "Mockup boxes of assorted screw set"
@@ -18,9 +18,9 @@ tabs:
     dataTab: "#tabs-with-card-2"
     title: "Especificaciones"
 longDescription:
-  title: "Sus usos mas comunes son en autopistas y carreteras, áreas peatonales, cortes de transito entre otros."
+  title: "Beneficios: Alta resistencia y durabilidad, Maniobrable, Efectiva para dirigir o contener vehículos de gran peso."
   subTitle: |
-    Robusta y durable, nuestra barrera de hormigón de 1.07 m de altura y 3 m de longitud es perfecta para controlar el tráfico, aumentar la seguridad en obras y eventos, y delimitar zonas. Fabricada con hormigón de primera calidad, ofrece estabilidad excepcional y resistencia a impactos y condiciones climáticas adversas. Fácil de instalar, es ideal para uso inmediato en cualquier entorno.
+    Barrera de hormigón armado ALTA en formato de 1,07 x 3,0 metros. Es una barrera de contención estándar utilizada para proyectos de infraestructuras, especialmente en carreteras o autopistas para separar o dirigir el trafico. Beneficios: Alta resistencia y durabilidad, Maniobrable, Efectiva para dirigir o contener vehículos de gran peso.
   btnTitle: "Contacta con nuestra área de venta"
   btnURL: "/contact"
 descriptionList:
@@ -49,5 +49,5 @@ tableData:
 blueprints:
   first: "@/images/alborada/barrera-tipo-f1.png"
   second: "@/images/alborada/barrera-tipo-f2.png"
-slug: barrera-tipo-f
+slug: barrera-hormigon-1070x3000
 ---

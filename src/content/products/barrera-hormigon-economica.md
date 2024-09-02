@@ -1,13 +1,15 @@
 ---
-title: "SF-FN F303"
-description: "Hex Bolts"
+title: "BARRERAS DE HORMIGON ECONOMICA"
+description: ""
+category: "prefabricados"
 main:
   id: 4
   content: |
-    Introducing the SF-FN F303 Hex Bolts – the perfect choice for heavy-duty fastening applications. Crafted with precision and durability in mind, these hex bolts provide the strength and reliability you need for your toughest projects.
+    Para aquellos que buscan una solución de contención y seguridad más accesible, brindamos una alternativa de mediana resistencia, conservando la geometría de 0,81 cm x 3 metros con o sin conector. Recomendable para ser utilizadas en zonas de menor velocidad (50km/hr), recintos interiores, contención de elementos o usos temporales o otros.
   imgCard: "@/images/product-image-4.avif"
   imgMain: "@/images/product-image-main-4.avif"
   imgAlt: "Mockup boxes of hex bolts"
+  images: ["@/images/alborada/barrera-mop-2.jpg", "@/images/alborada/barrera-mop.jpg", "@/images/alborada/barrera-tipo-f1.png", "@/images/alborada/barrera-tipo-f2.png"]
 tabs:
   - id: "tabs-with-card-item-1"
     dataTab: "#tabs-with-card-1"
@@ -15,15 +17,12 @@ tabs:
   - id: "tabs-with-card-item-2"
     dataTab: "#tabs-with-card-2"
     title: "Specifications"
-  - id: "tabs-with-card-item-3"
-    dataTab: "#tabs-with-card-3"
-    title: "Blueprints"
 longDescription:
   title: "Heavy-Duty Fastening Solutions"
   subTitle: |
-    The SF-FN F303 Hex Bolts are designed to handle the toughest fastening challenges with ease. Whether you're working on construction projects or heavy machinery, these hex bolts deliver the strength and reliability you need.
-  btnTitle: "Contact sales to learn more"
-  btnURL: "#"
+    Para aquellos que buscan una solución de contención y seguridad más accesible, brindamos una alternativa de mediana resistencia, conservando la geometría de 0,81 cm x 3 metros con o sin conector. Recomendable para ser utilizadas en zonas de menor velocidad (50km/hr), recintos interiores, contención de elementos o usos temporales o otros.
+  btnTitle: "Contáctanos para más información"
+  btnURL: "/contact"
 descriptionList:
   - title: "Strength and Durability"
     subTitle: "Constructed from high-quality materials, these hex bolts are built to withstand heavy loads and tough conditions."
@@ -52,5 +51,5 @@ specificationsRight:
 blueprints:
   first: "@/images/blueprint-1.avif"
   second: "@/images/blueprint-2.avif"
-slug: f303    
+slug: barrera-hormigon-economica
 ---

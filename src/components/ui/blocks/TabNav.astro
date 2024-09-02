@@ -47,9 +47,9 @@ Example:
         >{heading}</span
       >
       <!-- Content of the tab, changes color when active -->
-      <span
+      <div
         class="mt-1 block text-neutral-500 hs-tab-active:text-neutral-600 dark:text-neutral-400 dark:hs-tab-active:text-neutral-200"
-        >{content}</span
+        ><Fragment set:html={content} /></div
       >
     </span>
   </span>

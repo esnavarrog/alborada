@@ -14,6 +14,7 @@ const productsCollection = defineCollection({
       imgCard: image(),
       imgMain: image(),
       imgAlt: z.string(),
+      images: z.array(z.string()),
     }),
     tabs: z.array(
       z.object({

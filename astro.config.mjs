@@ -4,6 +4,7 @@ import vercelStatic from "@astrojs/vercel/static";
 import sitemap from "@astrojs/sitemap";
 import compressor from "astro-compressor";
 import starlight from "@astrojs/starlight";
+import solid from '@astrojs/solid-js';
 
 // https://astro.build/config
 export default defineConfig({
@@ -24,6 +25,7 @@ export default defineConfig({
   // },
   prefetch: true,
   integrations: [
+    solid(),
     tailwind(),
     sitemap({
       i18n: {
@@ -88,7 +90,7 @@ export default defineConfig({
         // github: "https://github.com/mearashadowfax/ScrewFast",
       },
       disable404Route: true,
-      customCss: ["./src/assets/styles/starlight.css"],
+      customCss: ["./src/assets/styles/starlight.css", "./src/assets/styles/swiper.css"],
       favicon: "/favicon.ico",
       components: {
         SiteTitle: "./src/components/ui/starlight/SiteTitle.astro",

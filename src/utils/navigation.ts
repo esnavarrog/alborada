@@ -8,7 +8,7 @@ const navBarLinks = [
   { name: "Contáctanos", url: "/contact" },
 ];
 
-const phoneNumber = '56955248982';
+const phoneNumber = '56931892006';
 // An array of links for footer
 const footerLinks = [
   {
