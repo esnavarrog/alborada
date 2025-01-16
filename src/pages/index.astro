@@ -27,20 +27,20 @@ import Products from "@/pages/products/Products.astro"
     title=`Servicios Adicionales de <span class="text-yellow-500 dark:text-yellow-400">Alborada del Valle</span>`
     tabs={[
       {
-        heading: "DESPACHOS A OBRA",
+        heading: "INSTALACIONES DE PRODUCTOS",
         content: `
-          <div>Condiciones de despachos.</div>
-          <ul>
-            <li>
+          <div class="mb-3">Condiciones de despachos.</div>
+          <ul class="mb-4">
+            <li class="mb-3">
               <strong>Monto del despacho:</strong> Despacho a obras tiene un costo asociado según la distancia a recorrer.
             </li>
-            <li>
+            <li class="mb-3">
               <strong>Lugar de entrega:</strong> Se deberá informar en el proceso de cotización.
             </li>
-            <li>
+            <li class="mb-3">
               <strong>Horario de entregas:</strong> Desde las 10:00 AM – 17:00 Hrs.
             </li>
-            <li>
+            <li class="mb-3">
               <strong>Pago y facturación:</strong> Se debe cancelar con anterioridad contra factura, antes que el envío se ejecute.
             </li>
           </ul>
@@ -52,18 +52,20 @@ import Products from "@/pages/products/Products.astro"
         first: true,
       },
       {
-        heading: "DESPACHOS A OBRA",
-        content:
-          "Nuestro transporte especializado está diseñado para manejar cualquier tipo de carga, garantizando la entrega segura y eficiente de tus materiales de construcción. Con nosotros, tus productos siempre estarán en buenas manos, listos para ser utilizados en tu proyecto.",
+        heading: "ENTREGA O DESPACHOS",
         svg: "dashboard",
         src: dashboard,
         alt: "A screenshot or graphic representation of the intuitive dashboard",
         second: true,
       },
       {
-        heading: "Construcciones a la medida",
-        content:
-          "Diseñamos y construimos proyectos a la medida para satisfacer tus requerimientos exactos. Nuestra experiencia y atención al detalle nos permiten ofrecer soluciones innovadoras y eficientes, asegurando que cada obra sea un reflejo fiel de tus ideas y necesidades.",
+        heading: "CONSTRUCCIONES A LA MEDIDA",
+        svg: "house",
+        src: construction,
+        alt: "Gray metal building frame near tower crane during daytime",
+      },
+      {
+        heading: "ASESORÍA TÉCNICA",
         svg: "house",
         src: construction,
         alt: "Gray metal building frame near tower crane during daytime",

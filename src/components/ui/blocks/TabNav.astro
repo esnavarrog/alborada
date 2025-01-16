@@ -37,20 +37,16 @@ Example:
   role="tab"
 >
   <!-- Slot for additional content -->
-  <span class="flex">
+  <span class="flex justify-center text-center">
     <slot />
     <!-- Container for the heading and content of the tab -->
-    <span class="ms-6 grow">
+    <span class="ms-6 grow text-center">
       <!-- Heading of the tab, changes color when active -->
       <span
         class="block text-lg font-bold text-neutral-800 hs-tab-active:text-orange-400 dark:text-neutral-200 dark:hs-tab-active:text-orange-300"
         >{heading}</span
       >
       <!-- Content of the tab, changes color when active -->
-      <div
-        class="mt-1 block text-neutral-500 hs-tab-active:text-neutral-600 dark:text-neutral-400 dark:hs-tab-active:text-neutral-200"
-        ><Fragment set:html={content} /></div
-      >
     </span>
   </span>
 </button>
