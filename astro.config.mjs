@@ -31,7 +31,7 @@ export default defineConfig({
       i18n: {
         defaultLocale: "es", // All urls that don't contain `fr` after `https://screwfast.uk/` will be treated as default locale, i.e. `en`
         locales: {
-          en: "es", // The `defaultLocale` value must present in `locales` keys
+          es: "es", // The `defaultLocale` value must present in `locales` keys
           fr: "fr",
         },
       },
@@ -50,7 +50,7 @@ export default defineConfig({
           lang: "es",
         },
         de: { label: "Deutsch", lang: "de" },
-        en: { label: "English", lang: "en" },
+        es: { label: "Español", lang: "es" },
         fa: { label: "Persian", lang: "fa", dir: "rtl" },
         fr: { label: "Français", lang: "fr" },
         ja: { label: "日本語", lang: "ja" },
@@ -94,7 +94,6 @@ export default defineConfig({
       favicon: "/favicon.ico",
       components: {
         SiteTitle: "./src/components/ui/starlight/SiteTitle.astro",
-        Head: "./src/components/ui/starlight/Head.astro",
         ThemeSelect: "./src/components/ui/starlight/ThemeSelect.astro",
       },
       head: [
@@ -124,5 +123,9 @@ export default defineConfig({
   //   clientPrerender: true,
   //   directRenderScript: true,
   // },
+  experimental: {
+    clientPrerender: true,
+    directRenderScript: true,
+  },
   // adapter: vercelStatic(),
 });

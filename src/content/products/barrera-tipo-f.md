@@ -1,26 +1,23 @@
 ---
-title: "BARRERA DE HORMIGON TIPO F"
-description: "Barrera de hormigón también conocida como 'New Jersey'"
+title: "Barrera de hormigón también conocida como 'New Jersey'"
+description: "BARRERA PREFABRICADA TIPO F (0,81 x 3 metros.)"
 category: "prefabricados"
 main:
   id: 2
   content: |
-    Barrera de hormigón prefabricada también conocida como 'New Jersey', 'Camineras' o 'Tipo F'. Es una estructura de contención utilizadas para proteger zonas vulnerables contra impactos de vehículos o otros objetos. Estas barreras están diseñadas para absorber o distribuir la energía del impacto, reduciendo el riesgo de daño o lesiones.
-  imgCard: "@/images/alborada/barrera-mop-2.jpg"
-  imgMain: "@/images/alborada/barrera-mop.jpg"
-  imgAlt: "Mockup boxes of assorted screw set"
-  images: ["https://swiperjs.com/demos/images/nature-1.jpg", "https://swiperjs.com/demos/images/nature-2.jpg", "https://swiperjs.com/demos/images/nature-3.jpg", "https://swiperjs.com/demos/images/nature-4.jpg"]
+    Elaborada por hormigón de alta resistencia G30 =300kg/cm2, lo que permite soportar impactos y fuerzas considerables, su estructura (armadura) conformada por acero tipo estriado A630 - 420H y conectores o enganche galvanizados en caliente, según manual de carretera vol. 5. 
+  imgCard: "@/images/alborada/btf/btf-1.jpg"
+  imgMain: "@/images/alborada/btf/btf-1.jpg"
+  imgAlt: "Barrera Prefabricada tipo F"
+  images: ["https://alboradadelvalle.cl/images/btf/btf-1.jpg", "https://alboradadelvalle.cl/images/btf/btf-2.jpg", "https://alboradadelvalle.cl/images/btf/btf-3.jpg", "https://alboradadelvalle.cl/images/btf/btf-4.jpg", "https://alboradadelvalle.cl/images/btf/btf-5.JPG"]
 tabs:
   - id: "tabs-with-card-item-1"
     dataTab: "#tabs-with-card-1"
     title: "Descripción"
-  - id: "tabs-with-card-item-2"
-    dataTab: "#tabs-with-card-2"
-    title: "Especificaciones"
 longDescription:
-  title: "Sus usos mas comunes son en autopistas y carreteras, áreas peatonales, cortes de transito entre otros."
+  title: "Usos recomendados: Carreteras, Caleteras."
   subTitle: |
-    Robusta y durable, nuestra barrera de hormigón de 1.07 m de altura y 3 m de longitud es perfecta para controlar el tráfico, aumentar la seguridad en obras y eventos, y delimitar zonas. Fabricada con hormigón de primera calidad, ofrece estabilidad excepcional y resistencia a impactos y condiciones climáticas adversas. Fácil de instalar, es ideal para uso inmediato en cualquier entorno.
+    Peso: 1975 kg.
   btnTitle: "Contacta con nuestra área de venta"
   btnURL: "/contact"
 descriptionList:
@@ -47,7 +44,7 @@ tableData:
       - ["Acabado", "Liso"]
       - ["Certificación", "Iso Casco 5"]
 blueprints:
-  first: "@/images/alborada/barrera-tipo-f1.png"
-  second: "@/images/alborada/barrera-tipo-f2.png"
+  first: "@/images/alborada/btf/btf-1.jpg"
+  second: "@/images/alborada/btf/btf-2.jpg"
 slug: barrera-tipo-f
 ---

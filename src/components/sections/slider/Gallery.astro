@@ -9,6 +9,30 @@ interface Props {
 }
 ---
 
+<!-- Swiper -->
+<div class="max-h-screen">
+  <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2 rounded-2xl max-h-[600px]">
+    <div class="swiper-wrapper">
+      {images.map((image: string, index: number) => (
+        <div class="swiper-slide">
+          <img src={image} alt={`Slide ${index + 1}`} class="rounded-2xl transition duration-[600ms] ease-[cubic-bezier(0.45,0,0.55,1)] hover:scale-110" />
+        </div>
+      ))}
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+  <div class="swiper mySwiper mt-3 max-h-40">
+    <div class="swiper-wrapper">
+      {images.map((image: string, index: number) => (
+        <div class="swiper-slide">
+          <img src={image} alt={`Slide ${index + 1}`} class="rounded-2xl max-h-40" />
+        </div>
+      ))}
+    </div>
+  </div>
+</div>
+
 <style>
     .swiper {
         width: 100%;
@@ -72,28 +96,27 @@ interface Props {
     }
 </style>
 
-<!-- Swiper -->
-<div class="max-h-screen">
-  <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2 rounded-2xl max-h-[600px]">
-    <div class="swiper-wrapper">
-      {images.map((image: string, index: number) => (
-        <div class="swiper-slide">
-          <img src={image} alt={`Slide ${index + 1}`} class="rounded-2xl transition duration-[600ms] ease-[cubic-bezier(0.45,0,0.55,1)] hover:scale-110" />
-        </div>
-      ))}
-    </div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-  </div>
-  <div class="swiper mySwiper mt-3 max-h-40">
-    <div class="swiper-wrapper">
-      {images.map((image: string, index: number) => (
-        <div class="swiper-slide">
-          <img src={image} alt={`Slide ${index + 1}`} class="rounded-2xl max-h-40" />
-        </div>
-      ))}
-    </div>
-  </div>
-</div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+<script is:inline src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script is:inline>
+  document.addEventListener('DOMContentLoaded', () => {
 
-<script type="module" src="/src/assets/scripts/swiper.js"></script>
+    const swiper = new Swiper(".mySwiper", {
+      loop: true,
+      spaceBetween: 10,
+      slidesPerView: 4,
+      freeMode: true,
+    });
+    const swiper2 = new Swiper(".mySwiper2", {
+      loop: true,
+      spaceBetween: 10,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      thumbs: {
+        swiper: swiper,
+      },
+    });
+  });
+</script>

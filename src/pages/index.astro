@@ -8,8 +8,9 @@ import FeaturesNavs from "@components/sections/features/FeaturesNavs.astro";
 import FAQ from "@components/sections/FAQ.astro";
 import Slider from "@components/sections/slider/Slider.astro";
 import faqs from "@data/faqs.json";
-import construction from "@images/alborada/IMG_2178.jpg";
-import tools from "@images/alborada/camara.png";
+import construction from "@images/alborada/medida.jpg";
+import asesoria from "@images/alborada/asesoria-tecnica.jpg";
+import tools from "@images/alborada/instalacion.jpeg";
 import dashboard from "@images/alborada/camion-pluma.jpg";
 import Products from "@/pages/products/Products.astro"
 
@@ -54,7 +55,6 @@ import Products from "@/pages/products/Products.astro"
         svg: "dashboard",
         src: dashboard,
         alt: "A screenshot or graphic representation of the intuitive dashboard",
-        second: true,
       },
       {
         heading: "CONSTRUCCIONES A LA MEDIDA",
@@ -65,16 +65,16 @@ import Products from "@/pages/products/Products.astro"
       {
         heading: "ASESORÍA TÉCNICA",
         svg: "house",
-        src: construction,
+        src: asesoria,
         alt: "Gray metal building frame near tower crane during daytime",
       },
     ]}
   />
 
-  <ClientsSection
-    title="Nuestros Clientes Confían"
-    subTitle="Calidad en nuestros productos."
-  />
+  <!--<ClientsSection-->
+  <!--  title="Nuestros Clientes Confían"-->
+  <!--  subTitle="Calidad en nuestros productos."-->
+  <!--/>-->
 
   <FAQ title="Preguntas Frecuentes" faqs={faqs} />
 

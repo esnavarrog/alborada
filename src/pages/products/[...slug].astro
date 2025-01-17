@@ -40,7 +40,7 @@ const pageTitle: string = `${product.data.title} | ${SITE.title}`;
     <div
       class="flex flex-col items-center justify-between space-y-4 sm:flex-row sm:space-y-0"
     >
-      <div class="w-full md:w-1/2 relative m-3">
+      <div id="gallery" class="w-full md:w-1/2 relative m-3">
         <Gallery images={product.data.main.images} classNames="w-[600px] rounded-md"/>
       </div>
       <div id="fadeInUp" class="m-3">
@@ -207,6 +207,11 @@ const pageTitle: string = `${product.data.title} | ${SITE.title}`;
           y: 50,
           willChange: "transform, opacity",
         });
+        gsap.set("#gallery", {
+          autoAlpha: 0,
+          y: 50,
+          willChange: "transform, opacity",
+        });
         gsap.set("#fadeInMoveRight", {
           autoAlpha: 0,
           x: 300,
@@ -225,6 +230,12 @@ const pageTitle: string = `${product.data.title} | ${SITE.title}`;
 
         timeline.to(
           "#fadeInUp",
+          { duration: 1.5, autoAlpha: 1, y: 0, ease: "power2.out" },
+          "-=1.2",
+        );
+
+        timeline.to(
+          "#gallery",
           { duration: 1.5, autoAlpha: 1, y: 0, ease: "power2.out" },
           "-=1.2",
         );
