@@ -1,6 +1,6 @@
 ---
-title: "BARRERA PREFABRICADA ALTA TIPO F"
-description: "BARRERA PREFABRICADA ALTA TIPO F (1,07 x 3 metros.)"
+title: "BARRERA PREFABRICADA ALTA TIPO F (1,07 x 3 metros.)"
+description: "BARRERA PREFABRICADA ALTA TIPO F"
 category: "prefabricados"
 main:
   id: 2
@@ -9,7 +9,7 @@ main:
   imgCard: "@/images/alborada/btfa/btfa-1.jpg"
   imgMain: "@/images/alborada/btfa/btfa-1.jpg"
   imgAlt: "Barrera Prefabricada Alta tipo F"
-  images: ["https://alboradadelvalle.cl/images/btfa/btfa-1.jpg", "https://alboradadelvalle.cl/images/btfa/btfa-2.jpg", "https://alboradadelvalle.cl/images/btfa/btfa-3.jpg", "https://alboradadelvalle.cl/images/btfa/btfa-4.jpg"]
+  images: ["https://alboradadelvalle.cl/images/btfa/btfa-2.jpg", "https://alboradadelvalle.cl/images/btfa/btfa-3.jpg", "https://alboradadelvalle.cl/images/btfa/btfa-4.jpg"]
 tabs:
   - id: "tabs-with-card-item-1"
     dataTab: "#tabs-with-card-1"

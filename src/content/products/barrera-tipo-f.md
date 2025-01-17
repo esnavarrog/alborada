@@ -1,9 +1,9 @@
 ---
-title: "Barrera de hormigón también conocida como 'New Jersey'"
-description: "BARRERA PREFABRICADA TIPO F (0,81 x 3 metros.)"
+title: "BARRERA PREFABRICADA TIPO F (0,81 x 3 metros.)"
+description: "Barrera de hormigón también conocida como 'New Jersey'"
 category: "prefabricados"
 main:
-  id: 2
+  id: 1
   content: |
     Elaborada por hormigón de alta resistencia G30 =300kg/cm2, lo que permite soportar impactos y fuerzas considerables, su estructura (armadura) conformada por acero tipo estriado A630 - 420H y conectores o enganche galvanizados en caliente, según manual de carretera vol. 5. 
   imgCard: "@/images/alborada/btf/btf-1.jpg"
